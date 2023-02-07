@@ -59,15 +59,71 @@
             </div>
             <div class="site-header-text-section">
               <h2>Hi, I'm Pavels</h2>
-              <p>
-                I'm web developer and I'm working with JacaScript, HTML/CSS to
-                deliver exceptional customer experience. Adept at contributing
-                to a highly collaborative work environment, finding solutions,
-                and determining customer satisfaction.
-              </p>
-              <label for="shortest">Shortest</label>
-              <input type="button" id="shortest" onclick="change_text()" />
-              <p id="demo"></p>
+              <div class="description-options">
+                <h3>Adjust Bio Length</h3>
+                <div class="radio-buttons">
+                  <div class="radio-btn-each">
+                    <input
+                      type="radio"
+                      id="shortest"
+                      name="description"
+                      onclick="changeText()"
+                      checked
+                    />
+                    <label for="shortest"></label>
+                  </div>
+                  <div class="radio-btn-each">
+                    <input
+                      type="radio"
+                      id="normal"
+                      name="description"
+                      onclick="changeText2()"
+                    />
+                    <label for="normal"></label>
+                  </div>
+                  <div class="radio-btn-each">
+                    <input
+                      type="radio"
+                      id="normal"
+                      name="description"
+                      onclick="changeText2()"
+                    />
+                    <label for="normal"></label>
+                  </div>
+                  <div class="radio-btn-each">
+                    <input
+                      type="radio"
+                      id="normal"
+                      name="description"
+                      onclick="changeText2()"
+                    />
+                    <label for="normal"></label>
+                  </div>
+                  <div class="radio-btn-each">
+                    <input
+                      type="radio"
+                      id="longest"
+                      name="description"
+                      onclick="changeText3()"
+                    />
+                    <label for="longest"></label>
+                  </div>
+                </div>
+                <div class="bio-length-words">
+                  <p>Shortest</p>
+                  <p>Longest</p>
+                </div>
+                <div class="about-me">
+                  <p id="short">
+                    I'm web developer and I'm working with JacaScript, HTML/CSS
+                    to deliver exceptional customer experience. Adept at
+                    contributing to a highly collaborative work environment,
+                    finding solutions, and determining customer satisfaction.
+                  </p>
+                  <p id="norm"></p>
+                  <p id="long"></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
