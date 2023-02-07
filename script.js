@@ -5,7 +5,7 @@ function changeText(val) {
     { transform: "translateX(-3000px)" },
   ];
   const textIn = [
-    { transform: "translateX(1000px)" },
+    { transform: "translateX(1800px)" },
     { transform: "translateX(0)" },
     { transition: "ease-out" },
   ];
@@ -32,9 +32,15 @@ function changeText(val) {
     finding solutions, and determining customer satisfaction.`;
   }
   if (val === "norm-long") {
+    newText.animate(textIn, timing);
     newText.innerHTML = `sdfsdfsdsadsfdsffvds`;
   }
   if (val === "longest") {
-    newText.innerHTML = `sdfsdfs`;
+    newText.animate(textIn, timing);
+    newText.innerHTML = `I'm web developer and love to code. I'm working with JacaScript, HTML/CSS
+    to deliver exceptional customer experience. Adept at
+    contributing to a highly collaborative work environment,
+    finding solutions, and determining customer satisfaction.<br>
+    I have two kids and I love spending time with my family.`;
   }
 }

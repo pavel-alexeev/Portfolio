@@ -233,6 +233,10 @@ main {
   margin-bottom: 20px;
 }
 
+#text {
+  height: 110px;
+}
+
 .about-me {
   padding-bottom: 20px;
   width: 80%;
