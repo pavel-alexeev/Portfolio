@@ -1,3 +1,5 @@
+"use strict";
+
 function changeText(val) {
   let newText = document.getElementById("text");
   const textOut = [
@@ -45,14 +47,14 @@ function changeText(val) {
   }
 }
 
-let i = 0;
-let txt = "Lorem ipsum dummy text blabla.";
-let speed = 50;
+function typeWriter(el) {
+  const textArray = el.innerHTML.split("");
+  el.innerHTML = "";
+  textArray.forEach((letter, i) =>
+    setTimeout(() => (el.innerHTML += letter), 120 * i)
+  );
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+  setInterval(() => typeWriter(el), 4000);
 }
+
+typeWriter(elementEl);
