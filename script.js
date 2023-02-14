@@ -1,5 +1,3 @@
-"use strict";
-
 function changeText(val) {
   let newText = document.getElementById("text");
   const textOut = [
@@ -51,7 +49,7 @@ function typeWriter(el) {
   const textArray = el.innerHTML.split("");
   el.innerHTML = "";
   textArray.forEach((letter, i) =>
-    setTimeout(() => (el.innerHTML += letter), 120 * i)
+    setTimeout(() => (el.innerHTML += letter), 150 * i)
   );
 
   setInterval(() => typeWriter(el), 4000);
