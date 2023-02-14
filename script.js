@@ -10,7 +10,7 @@ function changeText(val) {
     { transition: "ease-out" },
   ];
   const timing = {
-    duration: 1000,
+    duration: 1300,
   };
   document.querySelector("html").style.overflowX = "hidden";
 
@@ -42,5 +42,17 @@ function changeText(val) {
     contributing to a highly collaborative work environment,
     finding solutions, and determining customer satisfaction.<br>
     I have two kids and I love spending time with my family.`;
+  }
+}
+
+let i = 0;
+let txt = "Lorem ipsum dummy text blabla.";
+let speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
   }
 }

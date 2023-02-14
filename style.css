@@ -8,15 +8,6 @@ body {
   background-color: gray;
 }
 
-nav {
-  width: 100%;
-  height: 5vw;
-  background-color: black;
-  position: fixed;
-  z-index: 3;
-  opacity: 0.6;
-}
-
 main {
   width: 100%;
   display: block;
@@ -25,19 +16,20 @@ main {
 .side-bar {
   width: 15%;
   height: 100%;
-  background-color: #59a395;
+  background-color: rgb(113, 121, 110);
   position: fixed;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 1px 1px 5px black;
 }
 
 .side-bar-name {
   text-align: center;
   padding: 1rem 0;
   font-size: 1.25rem;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
   line-height: 1.4;
 }
 
@@ -71,7 +63,11 @@ main {
 
 .side-bar-options ul li:hover {
   animation: rightLeft 0.6s ease-out;
-  opacity: 0.5;
+  color: #ffffff;
+}
+
+.side-bar-options ul li a:hover {
+  color: #ffffff;
 }
 
 @keyframes rightLeft {
@@ -117,7 +113,8 @@ main {
 }
 
 .github img:hover,
-.instagram img:hover {
+.instagram img:hover,
+.linkedin img:hover {
   animation: github 0.5s ease-in-out;
 }
 
@@ -148,38 +145,52 @@ main {
 
 .main {
   height: 3000px;
+  width: 85%;
+  float: right;
 }
 
-.site-header-content {
-  /* height: 60vw; */
-  width: 85%;
+.main-home {
+  background-image: url("./images/pakata-goh-EJMTKCZ00I0-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vw;
+}
+
+.dark-background {
+  background-color: black;
+  opacity: 0.4;
+  width: 100%;
+  height: 100vw;
+}
+
+.site-about-content {
   background-color: white;
-  float: right;
   text-align: center;
 }
 
-.site-header-content img {
-  width: 300px;
-  /* height: 30%; */
+.side-bar-img img {
+  width: 90%;
   display: block;
   margin: 0 auto;
-  margin-top: 7rem;
   border-radius: 50%;
+  padding-bottom: 0.5rem;
 }
 
-.site-header-text-section {
+.site-about-text-section {
   margin: 0 auto;
   padding-top: 3rem;
   text-align: justify;
 }
 
-.site-header-text-section h2 {
+.site-about-text-section h2 {
   font-size: 1.75rem;
   font-weight: 500;
   text-align: center;
 }
 
-.site-header-text-section p {
+.site-about-text-section p {
   font-size: 1.375rem;
   padding-top: 1rem;
 }
